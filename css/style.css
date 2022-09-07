@@ -3,8 +3,37 @@
     margin: 0%;
     padding: 0%;
 }
+html{
+    font-size: 62.5%;
+}
 .head{
-    background-image: url("/images/");
+    position: relative;
+    /*background-color: aquamarine;*/
+    height: 500px;
+}
+.head div{    
+    background-image: url("/images/pexels-christina-morillo-1181263.jpg");
+    position: inherit;
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    /*text-align: center;*/
+}
+.head div h1{
+    position: inherit;
+    font-size: 6rem;
+    /*background-color: blueviolet;*/
+    color: aliceblue;
+    margin: auto;
+    margin-bottom: 5%;
+}
+.head div p{
+    position: inherit;
+    font-size: 3rem;
+    /*background-color: blueviolet;*/
+    color: aliceblue;
+    margin: auto;
+    margin-top: 0%;
 }
 .contenedor{
     display: flex;
