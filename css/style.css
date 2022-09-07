@@ -8,11 +8,14 @@ html{
 }
 .head{
     position: relative;
-    /*background-color: aquamarine;*/
-    height: 500px;
+    background-image: url("C:/Users/Jorge/OneDrive/Documentos/JORGE/UNIVERSIDAD/SEGUNDO SEMESTRE/LENGUAJES DE PROGRAMACIÓN/PROGRAMASY/images/codigo.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom 10% right 20% ;
+    height: 700px;
 }
 .head div{    
-    background-image: url("/images/pexels-christina-morillo-1181263.jpg");
+    background-color: rgba(255, 255, 255, 0.544);
     position: inherit;
     display:flex;
     flex-direction: column;
@@ -23,18 +26,58 @@ html{
     position: inherit;
     font-size: 6rem;
     /*background-color: blueviolet;*/
-    color: aliceblue;
+    color: rgb(108, 73, 248);
     margin: auto;
     margin-bottom: 5%;
+    text-shadow: 4px 4px 8px #000000df;
 }
 .head div p{
     position: inherit;
     font-size: 3rem;
     /*background-color: blueviolet;*/
-    color: aliceblue;
+    color: rgb(134, 105, 249);
     margin: auto;
     margin-top: 0%;
+    text-shadow: 0px 0px 14px #ffffff;
 }
 .contenedor{
-    display: flex;
+    /*display: flexbox;*/
+}
+.box1{
+    background-color: rebeccapurple;
+    height: 500px;
+}
+.box1 div{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+}
+.box1 div h1{
+    position: inherit;
+}
+.box2{
+    background-color: rgb(147, 177, 24);
+    height: 500px;
+}
+.box2 div{
+    margin: auto;
+    position: relative;
+    display:flex;
+    flex-direction: column;
+}
+.box2 div h1{
+    position: inherit;
+}
+.box3{
+    background-color: rgba(205, 226, 111, 0.764);
+    height: 500px;
+}
+.box3 div{
+    margin: auto;
+    position: relative;
+}
+.box3 div h1{
+    position: inherit;
 }
