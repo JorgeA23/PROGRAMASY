@@ -7,24 +7,25 @@ html{
     font-size: 62.5%;
 }
 .head{
-    position: relative;
     background-image: url("C:/Users/Jorge/OneDrive/Documentos/JORGE/UNIVERSIDAD/SEGUNDO SEMESTRE/LENGUAJES DE PROGRAMACIÓN/PROGRAMASY/images/codigo.jpg");
-    background-size: 100%;
+    background-size: auto 130%;
+    position: relative;
     background-repeat: no-repeat;
     background-position: bottom 10% right 20% ;
     height: 700px;
 }
-.head div{    
-    background-color: rgba(255, 255, 255, 0.544);
+.head div{   
+    background-color: rgba(255, 255, 255, 0.615);
     position: inherit;
     display:flex;
     flex-direction: column;
     height: 100%;
+    margin-top: 0%;
     /*text-align: center;*/
 }
 .head div h1{
     position: inherit;
-    font-size: 6rem;
+    font-size: 12rem;
     /*background-color: blueviolet;*/
     color: rgb(108, 73, 248);
     margin: auto;
@@ -44,18 +45,34 @@ html{
     /*display: flexbox;*/
 }
 .box1{
-    background-color: rebeccapurple;
-    height: 500px;
+    background-image: url("C:/Users/Jorge/OneDrive/Documentos/JORGE/UNIVERSIDAD/SEGUNDO SEMESTRE/LENGUAJES DE PROGRAMACIÓN/PROGRAMASY/images/aprendices.jpg");
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 700px;
 }
 .box1 div{
-    position: relative;
+    background-color: rgba(163, 168, 242, 0.544);
+    position: inherit;
     display:flex;
     flex-direction: column;
-    margin: auto;
-    justify-content: center;
+    height: 100%;
 }
 .box1 div h1{
     position: inherit;
+    font-size: 6rem;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    margin-top: 9%;
+    margin-bottom: 8%;
+}
+.box1 div p{
+    position: inherit;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    margin-top: 0%;
 }
 .box2{
     background-color: rgb(147, 177, 24);
