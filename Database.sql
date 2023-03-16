@@ -1,6 +1,8 @@
+--	CREACIÓN DE LA BASE	--
 CREATE DATABASE Programasy;
 use Programasy;
 
+--	CREACIONES DE TABLAS	--
 CREATE TABLE Cursos (
 Codigo_Curso INT PRIMARY KEY, 
 Nombre VARCHAR (50), 
@@ -48,6 +50,7 @@ Codigo_Estado INT PRIMARY KEY,
 Estado VARCHAR (20)
 );
 
+--	RELACIÓN DE LAS TABLAS	--
 ALTER TABLE Proveedores 
 ADD CONSTRAINT fk_AProducts FOREIGN KEY (Codigo_Producto) REFERENCES Productos(Codigo_Producto);
 
@@ -61,7 +64,7 @@ ALTER TABLE Usuarios
 ADD CONSTRAINT fk_AEstados FOREIGN KEY (Codigo_Estado) REFERENCES Estados(Codigo_Estado);
 
 
-
+--	INSERCIÓN DE DATOS EN LAS DIFERENTES TABLAS	--
 INSERT INTO empleados VALUES (10928839,'Ana','Nuñez','3289173889','anamaria@gmail.com',23, 'Cra 74 #596-384','Diseñador'); 
 INSERT INTO empleados VALUES (48826773,'Mario','Galindo','7354579274','mariozz@gmail.com',44, 'Av Jimenes 3783-34','Programador'); 
 INSERT INTO empleados VALUES (99177387,'Juan','Ramires','3129647583','juan07@yahoo.com',52, 'Calle 182#7243-29','Diseñador');
@@ -108,8 +111,7 @@ INSERT INTO usuarios VALUES (10203040, 'Samantha', 'Powers',18,'Samith011@gmail.
 INSERT INTO usuarios VALUES (81392849, 'James', 'Powers',20,'JpowerFULL@gmail.com', 'Av Wile Palace 123-182', '2229376187',  4,4);
 INSERT INTO usuarios VALUES (91929394, 'Selena', 'Quintanilla',45,'ChicoApto512@gmail.com', 'Calle 1823#182-176 sur', '7726748270',  1, 1);
 
-
-Función:
+--	CREACIÓN DE LA FUNSIÓN PARA "nuevoEmple" INGRESAR NUEVOS EMPLEADOS	--
 delimiter //
 CREATE function nuevoEmple(cedula int, nombre varchar(20), apellido varchar(20),telefono varchar(10),correo varchar(30),edad varchar(2),direcc varchar(30),cargo varchar(20)) RETURNS VARCHAR(100)
 BEGIN
@@ -118,5 +120,8 @@ BEGIN
 END;
 //
 
+--	LLAMAMOS LA FUNSIÓN INDICANDOLE LOS DATOS DEL NUEVO EMPLEADO	--
 select nuevoEmple(11111,'Pedro','Fernandez','+57626532','pfernan@hotmail.com',35,'Ave 123#1233-243','Diseñador');
+
+--	VISUALIZAMOS LA TABLA PARA VERIFICAR QUE SE HAYA INGRESADO EL NUEVO EMPLEADO	--
 select * from empleados;
