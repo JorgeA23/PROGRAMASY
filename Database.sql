@@ -111,7 +111,7 @@ INSERT INTO usuarios VALUES (10203040, 'Samantha', 'Powers',18,'Samith011@gmail.
 INSERT INTO usuarios VALUES (81392849, 'James', 'Powers',20,'JpowerFULL@gmail.com', 'Av Wile Palace 123-182', '2229376187',  4,4);
 INSERT INTO usuarios VALUES (91929394, 'Selena', 'Quintanilla',45,'ChicoApto512@gmail.com', 'Calle 1823#182-176 sur', '7726748270',  1, 1);
 
---	CREACIÓN DE LA FUNSIÓN PARA "nuevoEmple" INGRESAR NUEVOS EMPLEADOS	--
+--	CREACIÓN DE LA FUNCIÓN PARA "nuevoEmple" INGRESAR NUEVOS EMPLEADOS	--
 delimiter //
 CREATE function nuevoEmple(cedula int, nombre varchar(20), apellido varchar(20),telefono varchar(10),correo varchar(30),edad varchar(2),direcc varchar(30),cargo varchar(20)) RETURNS VARCHAR(100)
 BEGIN
@@ -120,7 +120,7 @@ BEGIN
 END;
 //
 
---	LLAMAMOS LA FUNSIÓN INDICANDOLE LOS DATOS DEL NUEVO EMPLEADO	--
+--	LLAMAMOS LA FUNCIÓN INDICANDOLE LOS DATOS DEL NUEVO EMPLEADO	--
 select nuevoEmple(11111,'Pedro','Fernandez','+57626532','pfernan@hotmail.com',35,'Ave 123#1233-243','Diseñador');
 
 --	VISUALIZAMOS LA TABLA PARA VERIFICAR QUE SE HAYA INGRESADO EL NUEVO EMPLEADO	--
